@@ -31,7 +31,7 @@ public class ModelStore implements IModelChanger{
 
     public Scene GetScene(int id) {
         for (int i = 0; i < Scenes.size(); i++) {
-            if (Scenes.get(i).id == id) {
+            if (Scenes.get(i).Id == id) {
                 return Scenes.get(i);
             }
         }
