@@ -1,4 +1,4 @@
 package homework2.task2.adapter;
 
-public class Usb {
+public interface Usb {
 }
