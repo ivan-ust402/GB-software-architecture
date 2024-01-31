@@ -1,6 +1,6 @@
 package homework2.task2.adapter;
 
-public class ComputerAdapter {
+public class MainComputerAdapter {
     public static void main(String[] args) {
         Computer computer = new Computer();
 
