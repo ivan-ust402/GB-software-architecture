@@ -5,8 +5,9 @@ public class BuySauce extends ITodoItem {
     public void markAsDone() {
         if (isDone) {
             System.out.println("Мы уже купили соус!");
+        } else {
+            isDone = true;
+            System.out.println("Купили соус");
         }
-        isDone = true;
-        System.out.println("Купили соус");
     }
 }

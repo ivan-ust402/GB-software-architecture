@@ -14,17 +14,33 @@ public class Main {
         defaultTodoItemList.add(new GenBuySauce());
 
         createAndMarkAsDoneRandomTodoItems(defaultTodoItemList);
+
+
+//  Для случая работы с класами todoItems напрямую
+//        List<ITodoItem> defaultTodoItemList = new ArrayList<>();
+//
+//        defaultTodoItemList.add(new BuyBread());
+//        defaultTodoItemList.add(new BuySausages());
+//        defaultTodoItemList.add(new BuySauce());
+//
+//        createAndMarkAsDoneRandomTodoItems1(defaultTodoItemList);
     }
 
     static void createAndMarkAsDoneRandomTodoItems(List<GenTodoItem> list) {
         Random rnd = ThreadLocalRandom.current();
         for (int i = 0; i < 20; i++) {
-            int currentValue = Math.abs(rnd.nextInt() % list.size());
-            int index = currentValue == 0
-                    ? 0 : currentValue == 1
-                    ? 1 : 2;
+            int index = Math.abs(rnd.nextInt() % list.size());
             ITodoItem todoItem = list.get(index).createTodoItem();
             todoItem.markAsDone();
         }
     }
+
+//    static void createAndMarkAsDoneRandomTodoItems1(List<ITodoItem> list) {
+//        Random rnd = ThreadLocalRandom.current();
+//        for (int i = 0; i < 20; i++) {
+//            int index = Math.abs(rnd.nextInt() % list.size());
+//            ITodoItem todoItem = list.get(index);
+//            todoItem.markAsDone();
+//        }
+//    }
 }
