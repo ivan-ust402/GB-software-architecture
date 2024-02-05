@@ -21,7 +21,7 @@ public class RentCar {
         ) {
             this.carClass = carClassFormatString;
         } else {
-            throw new Exception("Car Class incorrect value");
+            throw new Exception("Car class " + carClassFormatString + " is incorrect");
         }
         this.model = model;
         this.defects = defects;
@@ -42,11 +42,11 @@ public class RentCar {
         } else if (Objects.equals(carClass, "business")) {
             carClassCoefficient = 10;
         } else if (Objects.equals(carClass, "standard")) {
-            carClassCoefficient = 5;
+            carClassCoefficient = 2;
         } else {
             carClassCoefficient = 1;
         }
-        return carRating * carClassCoefficient;
+        return minGrade * carClassCoefficient;
     }
 
 //    Нарушение принципа, арендная машина не должга высчитывать соимость своей аренды в день,

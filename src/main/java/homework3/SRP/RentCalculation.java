@@ -9,7 +9,7 @@ public class RentCalculation {
             this.coefficient = coefficient;
         }
 
-        public double calculateRate() {
-            return baseCarRentPerDay * coefficient;
+        public void calculateRate() {
+            System.out.println(baseCarRentPerDay * coefficient);
         }
 }
