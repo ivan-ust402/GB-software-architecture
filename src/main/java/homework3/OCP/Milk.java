@@ -1,8 +1,8 @@
 package homework3.OCP;
 
 public class Milk extends Food{
-    public Milk(String name, double maxExpirationDate) {
-        super(name, maxExpirationDate);
+    public Milk() {
+        super("milk", 180);
     }
 
     @Override
