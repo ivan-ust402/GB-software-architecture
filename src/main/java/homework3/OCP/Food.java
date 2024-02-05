@@ -7,9 +7,9 @@ public class Food {
     public double maxExpirationDate;
 
 
-    public Food(String name, double expirationDate) {
+    public Food(String name, double maxExpirationDate) {
         this.name = name;
-        this.maxExpirationDate = expirationDate;
+        this.maxExpirationDate = maxExpirationDate;
     }
 
     public double getExpirationDate() {
