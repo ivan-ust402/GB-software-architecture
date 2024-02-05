@@ -51,7 +51,7 @@ public class RentCar {
 
 //    Нарушение принципа, арендная машина не должга высчитывать соимость своей аренды в день,
 //    этим должен заняться другой класс!
-    public double getRentCostPerADay() {
-        return baseRentCostPerADay * carRating;
-    }
+//    public double getRentCostPerADay() {
+//        return baseRentCostPerADay * carRating;
+//    }
 }
