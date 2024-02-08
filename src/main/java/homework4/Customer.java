@@ -22,15 +22,29 @@ public class Customer {
         this.cashProvider = new CashProvider();
     }
 
+    /**
+     * метод покупки билета, используется объект события и объект провайдера билетов
+     * в результате взаимодействия данных объектов возвращаем булеан значение успешности
+     * или провала выполнения покупки
+     * */
     public boolean buyTicket(Event event, TicketProvider ticketProvider) {
         return true;
     }
 
+    /**
+     * метод возврата билета, входящим аргументом является объект билета
+     * в результате отработки данного метода возвращаем булеан значение успешности
+     * или провала выполнения возврата билета
+     * */
     public boolean repealTicket(Ticket ticket) {
         return true;
     }
 
-    public ArrayList<Ticket> repealTicket(int ticketId) {
+    /**
+     * метод поиска билетов, входящим аргументом является ID билета
+     * в результате отработки данного метода возвращаем массив найденных билетов
+     * */
+    public ArrayList<Ticket> searchTicket(int ticketId) {
         return new ArrayList<Ticket>();
     }
 }
