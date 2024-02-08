@@ -23,4 +23,16 @@ public class Event {
                 + "Место проведения: " + venue
                 + "Число доступных билетов: " + ticketsAvailable);
     }
+
+    public boolean changeVenue(String name, String location, VenueProvider provider) {
+        return true;
+    }
+
+    public boolean chooseVenue(String name, String location, VenueProvider provider) {
+        return true;
+    }
+
+    public boolean changeCountAvailableTickets() {
+        return true;
+    }
 }
