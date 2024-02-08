@@ -19,6 +19,9 @@ public class VenueProvider {
         return venues;
     }
 
+    /**
+     * метод получения места проведения мероприятия
+     * */
     public Venue getVenue(String name, String location) {
         for (Venue item : venues) {
             if (Objects.equals(item.name, name) && Objects.equals(item.location, location)) {

@@ -14,6 +14,9 @@ public class Venue {
         this.location = location;
     }
 
+    /**
+     * метод получения инфо о месте проведения мероприятия
+     * */
     public void getVenueDetails() {
         System.out.println("Id места проведения: " + venueId
                 + "Название места: " + name
