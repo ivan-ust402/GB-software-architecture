@@ -5,8 +5,8 @@ import java.util.UUID;
 
 public class Event {
     private UUID eventId;
-    private Date date;
-    private Venue venue;
+    public Date date;
+    public Venue venue;
     private int ticketsAvailable;
 
 
