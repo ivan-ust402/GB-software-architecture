@@ -17,6 +17,9 @@ public class Event {
         this.ticketsAvailable = ticketsAvailable;
     }
 
+    /**
+     * метод получения инфо о событии
+     * */
     public void getDetails() {
         System.out.println("Id мероприятия: " + eventId
                 + "Дата мероприятия: " + date
@@ -24,14 +27,23 @@ public class Event {
                 + "Число доступных билетов: " + ticketsAvailable);
     }
 
+    /**
+     * метод изменения места проведения мероприятия
+     * */
     public boolean changeVenue(String name, String location, VenueProvider provider) {
         return true;
     }
 
+    /**
+     * метод выбора места проведения мероприятия
+     * */
     public boolean chooseVenue(String name, String location, VenueProvider provider) {
         return true;
     }
 
+    /**
+     * метод изменения количества доступных билетов
+     * */
     public boolean changeCountAvailableTickets() {
         return true;
     }
