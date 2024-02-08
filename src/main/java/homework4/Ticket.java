@@ -1,5 +1,6 @@
 package homework4;
 
+import java.util.Date;
 import java.util.UUID;
 
 public class Ticket {
@@ -18,5 +19,13 @@ public class Ticket {
         System.out.println("Номер билета: " + ticketId
                 + "Мероприятие: " + event
                 + "Стоимость: " + price);
+    }
+
+    public boolean chooseEvent(Date date, EventProvider eventProvider) {
+        return true;
+    }
+
+    public boolean changeEvent(Date date, EventProvider eventProvider) {
+        return true;
     }
 }

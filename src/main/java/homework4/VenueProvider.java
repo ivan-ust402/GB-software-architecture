@@ -3,6 +3,7 @@ package homework4;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.Objects;
 
 import static java.util.UUID.randomUUID;
 
@@ -16,5 +17,14 @@ public class VenueProvider {
 
     public ArrayList<Venue> getVenues() {
         return venues;
+    }
+
+    public Venue getVenue(String name, String location) {
+        for (Venue item : venues) {
+            if (Objects.equals(item.name, name) && Objects.equals(item.location, location)) {
+                return item;
+            }
+        }
+        return null;
     }
 }
