@@ -5,11 +5,11 @@ import java.util.Date;
 public class Event {
     private int eventId;
     private Date date;
-    private Vanue venue;
+    private Venue venue;
     private int ticketsAvailable;
 
 
-    public Event(int eventId, Date date, Vanue venue, int ticketsAvailable) {
+    public Event(int eventId, Date date, Venue venue, int ticketsAvailable) {
         this.eventId = eventId;
         this.date = date;
         this.venue = venue;
