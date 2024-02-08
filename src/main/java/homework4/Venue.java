@@ -1,11 +1,14 @@
 package homework4;
 
+import java.time.LocalDateTime;
+import java.util.UUID;
+
 public class Venue {
-    private int venueId;
+    private UUID venueId;
     private String name;
     private String location;
 
-    public Venue(int venueId, String name, String location) {
+    public Venue(UUID venueId, String name, String location) {
         this.venueId = venueId;
         this.name = name;
         this.location = location;

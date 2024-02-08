@@ -1,15 +1,16 @@
 package homework4;
 
 import java.util.Date;
+import java.util.UUID;
 
 public class Event {
-    private int eventId;
+    private UUID eventId;
     private Date date;
     private Venue venue;
     private int ticketsAvailable;
 
 
-    public Event(int eventId, Date date, Venue venue, int ticketsAvailable) {
+    public Event(UUID eventId, Date date, Venue venue, int ticketsAvailable) {
         this.eventId = eventId;
         this.date = date;
         this.venue = venue;

@@ -1,12 +1,14 @@
 package homework4;
 
+import java.util.UUID;
+
 public class Ticket {
-    private int ticketId;
+    private UUID ticketId;
     private float price;
     private Event event;
 
 
-    public Ticket(int ticketId, float price, Event event) {
+    public Ticket(UUID ticketId, float price, Event event) {
         this.ticketId = ticketId;
         this.price = price;
         this.event = event;
